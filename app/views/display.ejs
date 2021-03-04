@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Course Evaluate Form</title>
+    <link rel="stylesheet" href="css/displaystyles.css">
+  </head>
+  <body>
+    <section class="wrapper">
+    <div class="content">  
+      <header>
+        <h3>The Evaluate Course Form</h3>
+      </header>
+      <section>
+      <form class="course-form" action="thanks" method="POST">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text"  id="email" name="email" value="<%= email %>">
+        </div>
+        <div class="input-group">
+          <label for="coursecode">Course Code</label>
+          <input type="text" placeholder="Course Code" id="coursecode" name="coursecode">
+        </div>
+        <div class="input-group">
+          <label for="coursename">Course Name</label>
+          <input type="text" placeholder="Course Name" id="coursename" name="coursename">
+        </div>
+        <div class="input-group">
+          <label for="comments">Your Comments</label>
+          <textarea type="text" placeholder="Type your comments" id="comments" name="comments" rows="6" cols="50"></textarea>
+        </div>
+        <div class="input-group">
+          <!-- <input type="submit" value="Submit" name="submit" /> -->
+          <button name="submit" type="submit">Submit</button>
+        </div>
+      </form>
+      </section>
+        <footer>
+          <p>Nayul Kim COMP308 Assignment1</p>
+        </footer>
+    </div>
+      </section>
+  </body>
+</html>
